@@ -31,5 +31,5 @@
 - Acknowledge any resources, tutorials, or references you used to help complete the project.
 
 ## Future Enhancements
-    Better customization, animations. I'd also like 
+    Better customization, animations. I'd also like user based interaction so repeated questions aren't asked. 
 - List any features you would’ve liked to add if given more time
