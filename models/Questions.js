@@ -4,6 +4,6 @@ const QuestionsSchema = new mongoose.Schema({
     Question: String,
     yesCount: Number,
     noCount: Number,
-}, { collection: 'xio' });
+}, { collection: 'questions' });
 
 module.exports = mongoose.model('Questions', QuestionsSchema);
