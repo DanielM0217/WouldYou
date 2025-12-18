@@ -1,2 +1,66 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div id="Default"class="Phase Home">
+    <div class="popup-content">
+        <div>
+            <h2><b>WouldYou?</b></h2>
+        </div>
+        <div>
+            <p>
+            Welcome to WouldYou?, a user driven experience where questions provided by users like yourself are answered by anonymous people online.
+            Create questions, answer questions, or see what a majority of users agree with. To proceed click any option provided below.
+            </p>
+        </div>
+        <div class="buttonlayout">
+            <button id="addQuestionButton" class="homepagebutton">+ New Question</button>
+            <button id="answerButton" class="homepagebutton">Answer a Random Question</button>
+            <button id="statButton" class="homepagebutton">User Statistics</button>
+        </div>
+    </div>
+</div>  
+<div id="Questions" class="Phase hidden" >
+    <h2>Add a Yes or No Question</h2>
+    <form id="questionForm">
+        <input
+            type="text"
+            id="newQuestion"
+            placeholder="Enter a Yes or No Question"
+            required    
+        />
+        <button type="submit">Submit</button>
+    </form>
+    <button id="qBack" class="back">Back</button>
+</div>
+<div id="Answer" class="Phase hidden">
+    <div>
+        <h2 class="questionBox"></h2>
+    </div>
+    
+    <div class="buttonDis">
+        <div>
+            <button id="yesBtn" class="qBtn">YES</button>
+        </div>
+        <div>
+            <button id="noBtn" class="qBtn">NO</button>
+        </div>
+        <div>
+            <button id="nextQ" class="qBtn hidden">Next Question</button>
+        </div>
+    </div>
+    <div>
+        <div id="statDisplay"></div>
+    </div>
+    <button id="aBack" class="back">Back</button>
+</div>
+
+<div id="Stat" class="Phase hidden">
+    <h2>Highest Agreement Rate on 
+        <select id="filterChoice">
+            <option value="">Select</option>
+            <option value="Agreement">Yes</option>
+            <option value="Disagreement">No</option>
+        </select>
+    </h2>
+    <div id="grid-container">
+
+    </div>
+    <button id="sBack"class="back">Back</button>
+</div>
